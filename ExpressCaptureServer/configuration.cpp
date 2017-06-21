@@ -1328,6 +1328,6 @@ void system_stop(void) {
 #endif
 		capture_stop();
 		tx_stop();
-		stop_log();
+		//stop_log();
 	}
 }
