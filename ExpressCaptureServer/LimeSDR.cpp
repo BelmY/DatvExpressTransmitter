@@ -1,10 +1,13 @@
 #include "stdafx.h"
+#ifdef ENABLE_LIMESDR
 
 #include "LimeSDR.h"
 #include <LimeSuite.h>
 
 
-#ifdef ENABLE_LIMESDR
+//#pragma comment(lib, "C:\\Users\\Dell\\LimeSuite\\builddir\\src\\Release\\LimeSuite.lib")
+
+
 
 static lms_device_t* device = NULL;
 static lms_stream_t streamId;

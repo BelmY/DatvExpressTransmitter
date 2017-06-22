@@ -8,19 +8,37 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
 		LimeDebug|Win32 = LimeDebug|Win32
+		LimeDebug|x64 = LimeDebug|x64
 		LimeRelease|Win32 = LimeRelease|Win32
+		LimeRelease|x64 = LimeRelease|x64
+		LimeRelease64|Win32 = LimeRelease64|Win32
+		LimeRelease64|x64 = LimeRelease64|x64
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{32015E55-6DC5-4D38-94C1-52A13E506D02}.Debug|Win32.ActiveCfg = Debug|Win32
 		{32015E55-6DC5-4D38-94C1-52A13E506D02}.Debug|Win32.Build.0 = Debug|Win32
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.Debug|x64.ActiveCfg = Debug|x64
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.Debug|x64.Build.0 = Debug|x64
 		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeDebug|Win32.ActiveCfg = LimeDebug|Win32
 		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeDebug|Win32.Build.0 = LimeDebug|Win32
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeDebug|x64.ActiveCfg = LimeDebug|x64
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeDebug|x64.Build.0 = LimeDebug|x64
 		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeRelease|Win32.ActiveCfg = LimeRelease|Win32
 		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeRelease|Win32.Build.0 = LimeRelease|Win32
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeRelease|x64.ActiveCfg = LimeRelease|x64
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeRelease|x64.Build.0 = LimeRelease|x64
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeRelease64|Win32.ActiveCfg = LimeRelease64|Win32
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeRelease64|Win32.Build.0 = LimeRelease64|Win32
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeRelease64|x64.ActiveCfg = LimeRelease64|x64
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.LimeRelease64|x64.Build.0 = LimeRelease64|x64
 		{32015E55-6DC5-4D38-94C1-52A13E506D02}.Release|Win32.ActiveCfg = Release|Win32
 		{32015E55-6DC5-4D38-94C1-52A13E506D02}.Release|Win32.Build.0 = Release|Win32
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.Release|x64.ActiveCfg = Release|x64
+		{32015E55-6DC5-4D38-94C1-52A13E506D02}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

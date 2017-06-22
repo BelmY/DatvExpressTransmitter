@@ -3,6 +3,7 @@
 #include "Codecs.h"
 #include "Dvb.h"
 
+#pragma warning(disable : 4996)
 
 #define ENVC 0
 #define ENAC 1
