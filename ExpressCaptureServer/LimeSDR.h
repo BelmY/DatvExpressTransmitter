@@ -16,4 +16,7 @@ int limesdr_set_sr(double sr);
 
 void limesdr_run(void);
 
+void limesdr_pause(void);
+
+
 #endif

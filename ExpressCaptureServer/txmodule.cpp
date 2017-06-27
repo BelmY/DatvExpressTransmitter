@@ -41,6 +41,7 @@ UINT tx_thread(LPVOID pParam)
 				if ((len = theDvbS2.s2_add_ts_frame(b))>0) {
 					// Time to send new frame
 #ifdef ENABLE_LIMESDR
+							
 					limesdr_write_16_bit_samples(noise_add(theDvbS2.pl_get_frame(), len), len);
 #else
 					express_write_16_bit_samples(noise_add(theDvbS2.pl_get_frame(), len), len);
@@ -59,10 +60,11 @@ UINT tx_thread(LPVOID pParam)
 			if ((b = get_tx_buff()) != NULL) {
 				if ((len = dvb_t_encode_and_modulate(b)) > 0) {
 					// Time to send new frame
+					
 #ifdef ENABLE_LIMESDR
-					limesdr_write_16_bit_samples(noise_add(theDvbS2.pl_get_frame(), len), len);
+					limesdr_write_16_bit_samples((scmplx*)dvb_t_get_frame(), len);
 #else
-					express_write_16_bit_samples(noise_add(theDvbS2.pl_get_frame(), len), len);
+					express_write_16_bit_samples((scmplx*)dvb_t_get_frame(), len);
 #endif
 				}
 				rel_tx_buff(b);

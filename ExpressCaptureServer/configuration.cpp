@@ -951,7 +951,7 @@ int ConfigureExpress(void)
 #ifdef ENABLE_LIMESDR
 
 	res=limesdr_init();
-	limesdr_run();
+	//limesdr_run();
 
 #else 
 
@@ -1140,7 +1140,10 @@ uint32_t get_current_tx_symbol_rate(void){
 void cmd_transmit(void){
 	if (g_system_status == TRUE) {
 		capture_run();
-#ifndef ENABLE_LIMESDR
+		
+#ifdef ENABLE_LIMESDR
+		limesdr_run();
+#else
 		express_transmit();
 #endif
 		g_tx_status = TRUE;
@@ -1150,7 +1153,9 @@ void cmd_standby(void){
 	if (g_system_status == TRUE) {
 		tx_buf_empty();
 		capture_pause();
-#ifndef ENABLE_LIMESDR
+#ifdef ENABLE_LIMESDR
+		limesdr_pause();
+#else
 		express_receive();
 #endif
 		g_tx_status = FALSE;
